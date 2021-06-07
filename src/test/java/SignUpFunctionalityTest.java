@@ -16,9 +16,10 @@ public class SignUpFunctionalityTest extends TestBase{
         signUpPage.typeUsername("exam-user");
         signUpPage.typePassword("exampassword");
         signUpPage.typeFullName("Exam User");
+        signUpPage.typeEmail("testexammail@mail.com");
         signUpPage.checkBoxClick();
         signUpPage.clickSignUpButton();
         UserPage userPage = new UserPage();
-        assertTrue(userPage.isAvatarDisplayed(), "User is logged in");
+        assertTrue(userPage.isWelcomeDisplayed(), "User was not signed up");
     }
 }
