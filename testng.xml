@@ -1,0 +1,10 @@
+<suite name="Suite-1" verbose="1">
+    <listeners>
+        <listener class-name="Listeners.TestListener"/>
+    </listeners>
+    <test name="all-packages">
+        <packages>
+            <package name=".*" />
+        </packages>
+    </test>
+</suite>
